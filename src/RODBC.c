@@ -736,7 +736,7 @@ static int cachenbind(pRODBCHandle thisHandle, int nRows)
 	default:
 	{
 	    SQLLEN datalen = thisHandle->ColData[i].ColSize;
-	    Rprintf(datalen);
+	    printf(datalen);
 	    
 	    if (datalen <= 0 || datalen < COLMAX) datalen = COLMAX;
 	    /* sanity check as the reports are sometimes unreliable */
